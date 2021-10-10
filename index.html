@@ -41,7 +41,7 @@
     </section>
     <!-- loading section ends -->
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
         <!-- landing page section starts -->
         <section class="main" id="home">
 
@@ -59,7 +59,7 @@
             <div class="col-12 col-lg-12">
                 <div class="content flex-md-column flex-lg-row col-12">
                     <div class="textbox col-12 col-lg-4 col-md-12 ">
-                        <h2>Get Free Education with <br><span>EDU Knowledge</span></h2>
+                        <h2>Get Free Education with <br><span class="mainText">EDU Knowledge</span></h2>
                         <p class=" text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem iste cumque in voluptatibus qui tempora consequatur odit impedit totam rerum explicabo aperiam omnis, officia unde! Excepturi enim porro est dolores.</p>
                         <a href="#" class="">Learn More</a>
                     </div>
@@ -73,13 +73,61 @@
 
         
         </section> 
-        <!-- landing page section starts -->
+        <!-- landing page section ends -->
 
         <!-- what is edu section starts -->
-        <section id="course">   
-            
+        <section id="course" class="course">   
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="whatIsContainer">
+                            <div class="text-content ">
+                                <div class="title">
+                                    <h1>
+                                        <span class="">What is </span>
+                                        <br>
+                                        <span class="main-text ms-lg-3">EDU Knowledge</span> 
+                                    </h1>
+                                </div>
+                                <div class="body-text">
+                                    <p class="" style="--i:1;">Lorem ipsum dolor sit amet.</p>
+                                    <p class="" style="--i:2;">Lorem ipsum dolor sit amet.</p>
+                                    <p class="" style="--i:3;">Lorem ipsum dolor sit amet.</p>
+                                    <p class="" style="--i:4;">Lorem ipsum dolor sit amet.</p>
+                                    <p class="" style="--i:5;">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                            <div class="wrapper mt-md-5 mt-sm-5">
+                                <div class="wrapper-container">
+                                    <div class="image-cube">
+                                        <div class="front">
+                                            <img src="./img/p3.png">
+                                        </div>
+                                        <div class="right">
+                                            <img src="./img/p5.png">
+                                        </div>
+                                        <div class="back">
+                                            <img src="./img/p4.png">
+                                        </div>
+                                        <div class="left">
+                                            <img src="./img/p6.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- what is edu page section starts -->
+
+        <!--who are we section starts -->
+            <section class="people" id="people">
+
+            </section>
+        <!--who are we section starts -->
+
     </div>
 
 
@@ -89,9 +137,39 @@
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./scroll-out.js"></script>
     <script src="./main.js"></script>
     <script>
 
+        // home page btn effect starts
+        $(document).ready(function (e) {
+            
+            
+            $('.registerBtn').mouseenter(function (e) { 
+                x = e.pageX - $(this).offset().left;
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({
+                    top:y, left:x
+                });
+            });
+            $('.registerBtn').mouseout(function (e) { 
+                x = e.pageX - $(this).offset().left;
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({
+                    top:y, left:x
+                });
+            });
+        })
+        // home page btn effect ends
+
+        // scroll effects starts
+        ScrollOut({
+            targets : '.course,h1,span,p'
+        })
+        // scroll effects ends
+        
+    
+    
     </script>
 </body>
 </html>
