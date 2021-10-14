@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>EDU Knowledge</title>
 </head>
 <body>
@@ -44,24 +45,31 @@
     <div class="container-fluid p-0">
         <!-- landing page section starts -->
         <section class="main" id="home">
-
+            <div class="menu-expand">
+                <div class="menu-cancel">
+                    <i class="fas fa-times menu-cancel-icon"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html" data-text="Home">Home</a></li>
+                    <li><a href="#" data-text="Courses">Courses</a></li>
+                    <li><a href="#" data-text="Lessons">Lessons</a></li>
+                    <li><a href="#" data-text="Contact">Contact</a></li>
+                </ul>
+            </div>
             <header>
                 <a href="index.html" ><img src="./img/logo.png" alt="" class="logo"></a>
-                <ul class="d-lg-flex ">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#course">Course</a></li>
-                    <li><a href="#lesson">Lessons</a></li>
-                    <li><a href="#">Language</a></li>
-                </ul>
-                <!-- <i class="fa"></i> -->
+                
+                <div class="menu-bar">
+                    <img src="./img/menu.png" alt="" class="menu-icon">
+                </div>
         </header>
-        <div class="row">
+        <div class="row" id="home">
             <div class="col-12 col-lg-12">
                 <div class="content flex-md-column flex-lg-row col-12">
                     <div class="textbox col-12 col-lg-4 col-md-12 ">
-                        <h2>Get Free Education with <br><span class="mainText">EDU Knowledge</span></h2>
+                        <h2>Get Free Education with <br><span class="main-text">EDU Knowledge</span></h2>
                         <p class=" text-black-50">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem iste cumque in voluptatibus qui tempora consequatur odit impedit totam rerum explicabo aperiam omnis, officia unde! Excepturi enim porro est dolores.</p>
-                        <a href="#" class="">Learn More</a>
+                        <a href="#" class="">Register</a>
                     </div>
                     <div class="imgbox col-12 col-lg-8 col-md-12">
                         <img src="./img/p1.png" alt="" >
@@ -128,7 +136,7 @@
             <section class="people" id="people">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 col-lg-12">
                             <div class="">
                                 <div class="title">
                                     <h1>
@@ -137,9 +145,9 @@
                                         <span class="main-text ms-lg-3">EDU Knowledge</span> 
                                     </h1>
                                 </div>
-                                <div class="d-lg-flex flex-lg-row justify-content-center align-items-center flex-md-column justify-content-md-center align-items-md-center">
+                                <div class=" d-lg-flex flex-lg-row justify-content-center align-items-center flex-md-column justify-content-md-center align-items-md-center">
                                     <div class="card-container">
-                                        <div class="card1">
+                                        <div class="card1 col-12 wow animate__fadeInLeft">
                                             <div class="box">
                                                 <div class="content">
                                                     <div class="img-box">
@@ -162,7 +170,7 @@
                                         </div>
                                     </div>
                                     <div class="card-container">
-                                        <div class="card1 card2">
+                                        <div class="card1 card2 col-12 wow animate__fadeInRight">
                                             <div class="box">
                                                 <div class="content">
                                                     <div class="img-box">
@@ -194,36 +202,189 @@
 
         <!--reviews section starts -->
             <section class="review" id="review">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-xl-12">
+                            <div class="">
+                                <div class="title">
+                                    <h1>
+                                        <span class="">Here are some</span>
+                                        <br>
+                                        <span class="main-text review-text ms-lg-3">Students reviews</span> 
+                                    </h1>
+                                </div>
+                                <div class="swipeContainer wow animate__zoomInUp data-wow-delay='1s'">                                       
+                                    
+                                    <div class="swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <i class="fas fa-quote-left"></i>
+                                                <div class="content">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facilis ullam, vero non maxime deleniti ipsam ea ut odit eligendi.</p>
+                                                    <div class="details">
+                                                        <div class="img-box">
+                                                            <img src="./img/r2.png" alt="" >
+                                                        </div>
+                                                        <div class="">
+                                                            <h5 class="mt-0 mb-0 ms-3">Someone</h5>
+                                                            <p class="mb-0 ms-3 text-black-50">Lorem ipsum dolor sit amet.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>       
+                                            <div class="swiper-slide">
+                                                <i class="fas fa-quote-left"></i>
+                                                <div class="content">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facilis ullam, vero non maxime deleniti ipsam ea ut odit eligendi.</p>
+                                                    <div class="details">
+                                                        <div class="img-box">
+                                                            <img src="./img/r2.png" alt="" >
+                                                        </div>
+                                                        <div class="">
+                                                            <h5 class="mt-0 mb-0 ms-3">Someone</h5>
+                                                            <p class="mb-0 ms-3 text-black-50">Lorem ipsum dolor sit amet.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="swiper-slide">
+                                                <i class="fas fa-quote-left"></i>
+                                                <div class="content">
+                                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque facilis ullam, vero non maxime deleniti ipsam ea ut odit eligendi.</p>
+                                                    <div class="details">
+                                                        <div class="img-box">
+                                                            <img src="./img/r2.png" alt="" >
+                                                        </div>
+                                                        <div class="">
+                                                            <h5 class="mt-0 mb-0 ms-3">Someone</h5>
+                                                            <p class="mb-0 ms-3 text-black-50">Lorem ipsum dolor sit amet.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>                                   
+                                        </div>                                        
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         <!--reviews section starts -->
 
         <!--contact section starts -->
-        <section class="contact" id="contact">
-                
-        </section>
+            <section class="contact" id="contact">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="main">
+                                    <div class="title col-lg-6 d-flex">
+                                        <h1>
+                                            <span class="text-muted fs-3">So Let's</span>
+                                            <br>
+                                            <span class="main-text contact-text ms-lg-3">Get In <h1 class="">Touch</h1></span>
+                                        </h1>
+                                        <img src="./img/a.png" alt="" class="arrow">
+                                    </div>
+                                    
+                                    <div class="contact-container col-lg-6">
+                                        <div class="contact-info">
+                                            <div class="front"></div>
+                                            <div class="back">
+                                                <h3 class="">Contact Info</h3>
+                                                <div class="info">
+                                                    <div class="email-div d-flex justify-content-start align-items-center mb-3">
+                                                        <img src="./img/ic1.png" alt="" class="me-3">
+                                                        <a href="mailto:hsuwinlat2002@gmail.com">hsuwinlat2002@gmail.com</a>
+                                                    </div>
+                                                    <div class="ph-div d-flex justify-content-start align-items-center mb-3">
+                                                        <img src="./img/ic3.png" alt="" class="me-3">
+                                                        <a href="tel:+959978341501">09-978341501</a>
+                                                    </div>
+                                                    <div class="location-div d-flex justify-content-start align-items-center mb-3">
+                                                        <img src="./img/ic2.png" alt="" class="me-3">
+                                                        <p class="mb-0">No(5) Baho Road</p>
+                                                    </div>
+                                                </div>
+                                                <div class="map">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.0074375284844!2d96.1280478141466!3d16.825987123183285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194ca13fff6e3%3A0x1334ced7a53c5bbc!2sHledan%20Centre!5e0!3m2!1sen!2smm!4v1634204776767!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="message-container">
+                                            <h3>Send a Message</h3>
+                                            <div class="form-box">
+                                                <div class="input-box">
+                                                    <input type="text" required>
+                                                    <span>Name</span>
+                                                </div>
+                                                <div class="input-box">
+                                                    <input type="email" required>
+                                                    <span>Email</span>
+                                                </div>
+                                                <div class="input-box">
+                                                    <input type="text" required>
+                                                    <span>Ph Number</span>
+                                                </div>
+                                                <div class="input-box ">
+                                                    <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                                                    <span>Message</span>
+                                                </div>
+                                                <div class="input-box ">
+                                                    <button type="submit">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bg-glass"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
         <!--contact section starts -->
 
         <!--footer section starts -->
         <section class="footer" id="footer">
-                    
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <div class="footer-container">
+                            <div class="socials">
+                                <ul class="m-0">
+                                    <li style="--i:0"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li style="--i:1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li style="--i:2"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="links">
+                                <ul class="d-lg-flex ">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#eduKnowledge">About</a></li>
+                                    <li><a href="#people">Teachers</a></li>
+                                    <li><a href="#review">Review</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="copy-right">
+                                <p><i class="far fa-copyright mb-0"></i>2021 Hsu Win Lat | All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--footer section starts -->
 
 
     </div>
 
-    
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./scroll-out.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./node_modules/WOW-master/dist/wow.min.js"></script>
     <script src="./main.js"></script>
     <script>
 
@@ -254,8 +415,51 @@
         })
         // scroll effects ends
         
-    
-    
+        // swipe.js starts
+        var swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 3000,
+            },
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+            },
+            loop : true
+        });
+        // swipe.js ends
+        
+        // wow.js starts
+        wow = new WOW(
+                        {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animate__animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true,        // default
+                        
+                    }
+                    )
+        wow.init();
+        // wow.js ends
+
+        // menu icon 
+        $(".menu-bar").click(function () {
+            $(".menu-expand").css({
+                display : "block",
+            })
+        });
+        $(".menu-cancel-icon").click(function () {
+            $(".menu-expand").css({
+                display : "none",
+            })
+        });
     </script>
 </body>
 </html>
