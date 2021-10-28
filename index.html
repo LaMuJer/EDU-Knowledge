@@ -47,15 +47,17 @@
         <section class="main" id="home">
             <!-- menu expands starts -->
             <div class="menu-expand">
-                <div class="menu-cancel">
-                    <i class="fas fa-times menu-cancel-icon"></i>
+                <div class="menu-expand-flex">
+                    <div class="menu-cancel">
+                        <i class="fas fa-times menu-cancel-icon"></i>
+                    </div>
+                    <ul class="p-0">
+                        <li><a href="index.html" data-text="Home" id="menu_link">Home</a></li>
+                        <li><a href="#" data-text="Courses" id="menu_link">Courses</a></li>
+                        <li><a href="#" data-text="Lessons" id="menu_link">Lessons</a></li>
+                        <li><a href="#contact" data-text="Contact" id="menu_link">Contact</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="index.html" data-text="Home">Home</a></li>
-                    <li><a href="#" data-text="Courses">Courses</a></li>
-                    <li><a href="#" data-text="Lessons">Lessons</a></li>
-                    <li><a href="#contact" data-text="Contact">Contact</a></li>
-                </ul>
             </div>
             <!-- menu expands ends -->
             <div class="landing-bg">
@@ -79,12 +81,12 @@
                     </div>
                 </div>
         </header>
-        <div class="row" id="home">
+        <div class="row d-flex justify-content-center align-items-center" id="home">
             <div class="col-12 col-lg-12">
                 <div class="content col-lg-12">
                     <div class="textbox col-12 col-lg-4 col-md-12 lan-content english" id="english">
                         <h2>Get Free Education with <br><span class="main-title">Edu Knowledge</span></h2>
-                        <p class="headerText" id="headerText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem iste cumque in voluptatibus qui tempora consequatur odit impedit totam rerum explicabo aperiam omnis, officia unde! Excepturi enim porro est dolores.</p>
+                        <p class="headerText" id="headerText">Edu Knowledge is the website in which we make up and share English lessons and other knowledgeable videos for targeting people who have burning desire in learning English.</p>
                         <a href="#" class="" id="register">Register</a>
                     </div>
                     <div class="imgbox col-12 col-lg-8 col-md-12">
@@ -161,11 +163,12 @@
                                         <span class="main-text ms-lg-3">Edu Knowledge</span> 
                                     </h1>
                                 </div>
-                                <div class=" d-lg-flex flex-lg-row justify-content-center align-items-center flex-md-column justify-content-md-center align-items-md-center">
+                                <div class="d-flex justify-content-center align-items-center card-container-col">
                                     <div class="card-container">
                                         <div class="card1 col-12 wow animate__fadeInLeft">
+                                            <h2 class="name-phone">Tr.Brown</h2>
                                             <div class="box">
-                                                <div class="content">
+                                                <div class="content">                                             
                                                     <div class="img-box">
                                                         <img src="./img/person1.jpg" alt="">
                                                         <div class="bg-glass"></div>
@@ -187,7 +190,8 @@
                                     </div>
                                     <div class="card-container">
                                         <div class="card1 card2 col-12 wow animate__fadeInRight">
-                                            <div class="box">
+                                            <h2 class="name-phone">Tr.Htet</h2>
+                                            <div class="box">                                                
                                                 <div class="content">
                                                     <div class="img-box">
                                                         <img src="./img/person2-1.jpg" alt="">
@@ -336,7 +340,7 @@
                                                     <span>Name</span>
                                                 </div>
                                                 <div class="input-box">
-                                                    <input type="email" required>
+                                                    <input type="email" required name="user_email" id="user_email">
                                                     <span>Email</span>
                                                 </div>
                                                 <div class="input-box">
@@ -348,17 +352,41 @@
                                                     <span>Message</span>
                                                 </div>
                                                 <div class="input-box ">
-                                                    <button type="submit">Submit</button>
+                                                    <button type="submit" id="submitBtn">Submit</button>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="bg-glass"></div>
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
             </section>
+            <!-- phone contact -->
+            <div class="contact-info-sm">
+                <div class="">
+                    <h3 class="">Contact Info</h3>
+                    <div class="info">
+                        <div class="email-div d-flex justify-content-start align-items-center mb-3">
+                            <img src="./img/ic1.png" alt="" class="me-3">
+                            <a href="mailto:hsuwinlat2002@gmail.com">hsuwinlat2002@gmail.com</a>
+                        </div>
+                        <div class="ph-div d-flex justify-content-start align-items-center mb-3">
+                            <img src="./img/ic3.png" alt="" class="me-3">
+                            <a href="tel:+959978341501">09-978341501</a>
+                        </div>
+                        <div class="location-div d-flex justify-content-start align-items-center mb-3">
+                            <img src="./img/ic2.png" alt="" class="me-3">
+                            <p class="mb-0">No(5) Baho Road</p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.0074375284844!2d96.1280478141466!3d16.825987123183285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194ca13fff6e3%3A0x1334ced7a53c5bbc!2sHledan%20Centre!5e0!3m2!1sen!2smm!4v1634204776767!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
         <!--contact section starts -->
 
         <!--footer section starts -->
@@ -368,7 +396,7 @@
                     <div class="col-lg-12 col-12">
                         <div class="footer-container">
                             <div class="socials">
-                                <ul class="m-0">
+                                <ul class="m-0 p-0">
                                     <li style="--i:0"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li style="--i:1"><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     <li style="--i:2"><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -393,6 +421,8 @@
         </section>
         <!--footer section starts -->
 
+        
+
     </div>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
@@ -409,7 +439,7 @@
             let pagex = e.pageX + 'px';
             cursor.style.left = e.pageX + 'px';
             cursor.style.top = e.pageY + 'px';
-            if(e.pageX < 640) {
+            if(e.pageX > 640) {
                 document.getElementById('bgWhite').style.width = "100%";
                 document.getElementById('bgDark').style.width = "0%";
             } else {
@@ -462,12 +492,21 @@
         // menu icon 
         $(".menu-bar").click(function () {
             $(".menu-expand").css({
-                display : "block",
+                display : "flex",
             })
         });
         $(".menu-cancel-icon").click(function () {
             $(".menu-expand").css({
                 display : "none",
+            })
+        });
+        let menu_link = document.querySelectorAll("#menu_link");
+        menu_link.forEach(element => {
+            element.addEventListener("click",function(e){
+                // e.preventDefault();
+                $(".menu-expand").css({
+                    display : "none",
+                })
             })
         });
         //menu icon ends
@@ -478,14 +517,31 @@
         function checkedFun() {
             if(checkedVal.checked) {
                 $("#register").text("Learn More") ;
-                $("#headerText").text("Edu Knowledge ဆိုတာ အင်္ဂလိပ်စာ လေ့လာချင်သူများနဲ့ တစ်ခြားဗဟုသုတဆိုင်ရာအကြောင်းအရာများကို အခမဲ့ ဝင်ရောက်လေ့လာနိုင်အောင် ဖန်တီးထားတဲ့ Website ဖြစ်ပါတယ်။နေ့စဉ် အင်္ဂလိပ်စာကို လေ့လာချင်သူတွေအတွက် ရက်အလိုက် သင်ခန်းစာများကို စနစ်တကျ စုစည်းပေးထားသလို Homework များ Test များကိုပါ စနစ်တကျစီစဉ်ပေးထားသော နေရာတစ်ခုဖြစ်ပါတယ်။ ဒါ့အပြင် ယခုအခါ ကလေးများအတွက် စာပေဘာသာရပ်များသာမကဘဲ ဖွံ့ဖြိုးရေး ဘာသာရပ်များကိုပါ သင်ကြားပို့ချလျှက် ရှိပါတယ်။") ;
-                console.log('hi')
+                $("#headerText").text("Edu Knowledge ဆိုတာ အင်္ဂလိပ်စာ လေ့လာချင်သူများနဲ့ တစ်ခြားဗဟုသုတဆိုင်ရာအကြောင်းအရာများကို အခမဲ့ ဝင်ရောက်လေ့လာနိုင်အောင် ဖန်တီးထားတဲ့ Website ဖြစ်ပါတယ်။") ;
         } else {
             $("#register").text("Register");
-            $("#headerText").text("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem iste cumque in voluptatibus qui tempora consequatur odit impedit totam rerum explicabo aperiam omnis, officia unde! Excepturi enim porro est dolores.")
+            $("#headerText").text("Edu Knowledge is the website in which we make up and share English lessons and other knowledgeable videos for targeting people who have burning desire in learning English.")
             console.log('hello')
         }
         }
+        // Language toggle ends
+
+        // sends message
+        let submitBtn = document.getElementById('submitBtn');
+
+        submitBtn.addEventListener("click" , function sendMail(e) {
+            e.preventDefault();
+            let user_email = document.getElementById('user_email').value; 
+            let message = document.getElementById("message").value;
+            var link = "mailto:glacierice188@gmail.com"
+                    // + "?cc=user_email"
+                    + "&subject=" + encodeURIComponent("Edu Website")
+                    + "&body=" + encodeURIComponent(message)
+            ;
+            
+            window.location.href = link;
+        })
+        
     </script>
 </body>
 </html>
