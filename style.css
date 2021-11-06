@@ -470,7 +470,7 @@ header .logo {
 }
 .body-text p[data-scroll="in"] {
     transition-delay: calc(0.1s * var(--i));
-    transform: translateX(calc(20px * var(--i)));
+    transform: translateX(calc(10px * var(--i)));
 }
 .wrapper{
     height: 300px;
